@@ -1,25 +1,22 @@
 {
-  "name": "logo-api",
+  "name": "incidents-api",
   "version": "1.0.0",
-  "description": "Remotely change the LIT Devs logo!",
+  "description": "Track days since last incident",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LITdevs/logo-api.git"
+    "url": "git+https://github.com/LITdevs/incidents.git"
   },
-  "author": "",
+  "author": "Skelly",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/LITdevs/logo-api/issues"
+    "url": "https://github.com/LITdevs/incidents/issues"
   },
-  "homepage": "https://github.com/LITdevs/logo-api#readme",
+  "homepage": "https://github.com/LITdevs/incidents#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "express-rate-limit": "^6.4.0",
     "nocache": "^3.0.4"
   }
 }
