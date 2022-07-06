@@ -36,7 +36,7 @@ app.get('/api/reset', function (req, res) {
 })
 
 app.get('*', function (req, res) {
-  res.render(__dirname + "/../public/index.ejs", { incidentTime: ago(new Date(data.lastIncident)) });
+  res.render(__dirname + "/../public/index.ejs", { incidentTime: ago(new Date(data.lastIncident), 'day') });
 })
 
 app.listen(82)
