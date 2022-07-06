@@ -25,7 +25,7 @@ app.get('/reset', function (req, res) {
 
 app.get('/api/image', function (req, res) {
   res.header("Content-Type","image/svg+xml");
-  res.send(svg.replace("$TIMESINCEINCIDENT", Date.now() - data.lastIncident + "ms"));
+  res.send(svg.replace("$TIMESINCEINCIDENT", friendlyTime(new Date(data.lastIncident))));
 })
 
 app.get('/api/reset', function (req, res) {
