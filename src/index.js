@@ -37,7 +37,7 @@ app.get('/api/reset', function (req, res) {
 })
 
 app.get('*', function (req, res) {
-  res.render(__dirname + "/../public/index.ejs", { incidentTime: friendlyTime(new Date(data.lastIncident)), reason: data.reason ? `<b>${data.reason}</b>}` : "(too embarrassed to comment)" });
+  res.render(__dirname + "/../public/index.ejs", { incidentTime: friendlyTime(new Date(data.lastIncident)), reason: data.reason ? `<b>${data.reason}</b>` : "(too embarrassed to comment)" });
 })
 
 app.listen(82)
