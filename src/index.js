@@ -15,10 +15,8 @@ const cors = require('cors');
 app.use(nocache());
 app.use(express.json());
 app.use(cors());
-
-app.get('/', function (req, res) {
-  res.send('Hii! It\'s me, the LIT Devs incident API!')
-})
+app.use("/resources", express.static('public/resources'));
+app.set("view engine", "ejs");
 
 app.get('/reset', function (req, res) {
   res.send('<form action="/api/reset"><input type="text" name="key"><input type="submit" value="Reset"></form>')
@@ -34,6 +32,10 @@ app.get('/api/reset', function (req, res) {
   data.lastIncident = Date.now();
   fs.writeFileSync(`${__dirname}/data.json`, JSON.stringify(data, null, 4));
   res.sendStatus(200);
+})
+
+app.get('*', function (req, res) {
+  res.render(__dirname + "/public/index.ejs");
 })
 
 app.listen(82)
