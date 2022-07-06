@@ -2,6 +2,8 @@
 <html>
     <head>
         <link rel="icon" href="/resources/favicon.ico" type="image/x-icon">
+        <link rel="preload" href="/resources/done.mp3" as="audio">
+        <link rel="preload" href="/resources/sadness.ogg" as="audio">
         <title>Oops!</title>
         <style>
             #wrapper {
@@ -16,9 +18,21 @@
                 left: 2.8em;
             }
         </style>
+        <script>
+            window.addEventListener("DOMContentLoaded", function() {
+                if(document.search == "?messup") {
+                    new Audio("/resources/done.mp3").play();
+                    setTimeout(() => {
+                        document.querySelector("audio").play();
+                    }, 1000);
+                } else {
+                    document.querySelector("audio").play();
+                }
+            })
+        </script>
     </head>
     <body>
-        <audio autoplay loop src="/resources/sadness.ogg"></audio>
+        <audio loop src="/resources/sadness.ogg"></audio>
         <div id="wrapper">
             <a href="/reset"><img src="/resources/incidentslogo.png" id="logo"></a>
             <p>tracks the failures of the lit devs<br>here is the time since the last one:</p>
