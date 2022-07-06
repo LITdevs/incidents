@@ -33,7 +33,7 @@ app.get('/api/reset', function (req, res) {
   data.lastIncident = Date.now();
   data.reason = req.query?.reason
   fs.writeFileSync(`${__dirname}/data.json`, JSON.stringify(data, null, 4));
-  res.sendStatus(200);
+  res.redirect("/")
 })
 
 app.get('*', function (req, res) {
