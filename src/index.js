@@ -2,6 +2,7 @@ const fs = require('fs')
 const express = require('express')
 const app = express()
 const svg = fs.readFileSync(`${__dirname}/incidents.svg`, 'utf8');
+var ago = require('s-ago');
 var data
 if (!fs.existsSync(`${__dirname}/data.json`)) {
   fs.writeFileSync(`${__dirname}/data.json`, '{"lastIncident": 0}')
@@ -35,7 +36,7 @@ app.get('/api/reset', function (req, res) {
 })
 
 app.get('*', function (req, res) {
-  res.render(__dirname + "/../public/index.ejs", { incidentTime: data.lastIncident });
+  res.render(__dirname + "/../public/index.ejs", { incidentTime: ago(new Date(data.lastIncident)) });
 })
 
 app.listen(82)
