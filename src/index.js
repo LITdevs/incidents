@@ -20,7 +20,7 @@ app.use("/resources", express.static('public/resources'));
 app.set("view engine", "ejs");
 
 app.get('/reset', function (req, res) {
-  res.send('<form action="/api/reset"><input type="password" name="key"><input type="submit" value="Reset"><br><br><input type="text" name="reason" placeholder="optional reason"></form>')
+  res.send('<link rel="icon" href="/resources/favicon.ico" type="image/x-icon"><title>Here we go again...</title><form action="/api/reset"><input type="password" name="key"><input type="submit" value="Reset"><br><br><input type="text" name="reason" placeholder="optional reason"></form>')
 })
 
 app.get('/api/image', function (req, res) {
