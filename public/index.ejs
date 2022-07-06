@@ -20,7 +20,7 @@
         </style>
         <script>
             window.addEventListener("DOMContentLoaded", function() {
-                if(document.search == "?messup") {
+                if(document.location.search == "?messup") {
                     new Audio("/resources/done.mp3").play();
                     setTimeout(() => {
                         document.querySelector("audio").play();
