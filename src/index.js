@@ -20,7 +20,7 @@ app.use("/resources", express.static('public/resources'));
 app.set("view engine", "ejs");
 
 app.get('/reset', function (req, res) {
-  res.send('<form action="/api/reset"><input type="text" name="key"><input type="submit" value="Reset"></form>')
+  res.send('<form action="/api/reset"><input type="text" name="key"><input type="submit" value="Reset"><br><br><input type="text" name="reason" placeholder="optional reason"></form>')
 })
 
 app.get('/api/image', function (req, res) {
@@ -31,6 +31,7 @@ app.get('/api/image', function (req, res) {
 app.get('/api/reset', function (req, res) {
   if (req.query?.key != process.env.KEY) return res.sendStatus(403);
   data.lastIncident = Date.now();
+  data.reason = req.query?.reason
   fs.writeFileSync(`${__dirname}/data.json`, JSON.stringify(data, null, 4));
   res.sendStatus(200);
 })
