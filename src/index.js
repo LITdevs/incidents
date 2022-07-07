@@ -29,7 +29,7 @@ app.get('/api/image', function (req, res) {
 })
 
 app.get('/api/reset', function (req, res) {
-  if (req.query?.key != process.env.KEY) return res.sendStatus(403);
+  if (req.query?.key != process.env.KEY) return res.redirect("https://youtu.be/S_ReALgXhBE");
   data.lastIncident = Date.now();
   data.reason = req.query?.reason
   fs.writeFileSync(`${__dirname}/data.json`, JSON.stringify(data, null, 4));
