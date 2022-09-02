@@ -2,6 +2,7 @@ const fs = require('fs')
 const express = require('express')
 const app = express()
 const svg = fs.readFileSync(`${__dirname}/incidents.svg`, 'utf8');
+const axios = require('axios').default;
 var friendlyTime = require('friendly-time');
 var data
 if (!fs.existsSync(`${__dirname}/data.json`)) {
@@ -34,6 +35,9 @@ app.get('/api/reset', function (req, res) {
   data.reason = req.query?.reason
   fs.writeFileSync(`${__dirname}/data.json`, JSON.stringify(data, null, 4));
   res.redirect("/?messup")
+  axios.post(process.env.DISCORD_FAILHOOK, {
+    content: `**NEW EPIC LIT DEV FAILURE JUST ARRIVED!**\n{data.reason ? data.reason : "(too embarrassed to comment)"}`
+  })
 })
 
 app.get('*', function (req, res) {
