@@ -30,7 +30,7 @@ app.get('/api/image', function (req, res) {
 })
 
 app.get('/api/reset', function (req, res) {
-  if (req.query?.key != process.env.KEY) return res.redirect("https://youtu.be/S_ReALgXhBE");
+  if (req.query?.key != process.env.KEY) return res.redirect("https://flipnot.es/KLJPMT");
   data.lastIncident = Date.now();
   data.reason = req.query?.reason
   fs.writeFileSync(`${__dirname}/data.json`, JSON.stringify(data, null, 4));
