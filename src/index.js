@@ -11,6 +11,17 @@ if (!fs.existsSync(`${__dirname}/data.json`)) {
 data = JSON.parse(fs.readFileSync(`${__dirname}/data.json`, 'utf8').toString());
 require("dotenv").config();
 
+// having the same video got boring
+// i'm a little biased with my selections
+const wrongKeyJumpscares = [
+  "https://flipnot.es/KLJPMT",
+  "https://youtu.be/XNakLxMVxs8",
+  "https://redd.it/xtcwtt",
+  "https://redd.it/xsu9r4",
+  "https://redd.it/xsclwq",
+  "https://youtu.be/z_Pbq1VC5is"
+]
+
 // middleware shit
 const nocache = require('nocache');
 const cors = require('cors');
@@ -30,7 +41,7 @@ app.get('/api/image', function (req, res) {
 })
 
 app.get('/api/reset', function (req, res) {
-  if (req.query?.key != process.env.KEY) return res.redirect("https://flipnot.es/KLJPMT");
+  if (req.query?.key != process.env.KEY) return res.redirect(wrongKeyJumpscares[Math.floor(Math.random()*wrongKeyJumpscares.length)]);
   data.lastIncident = Date.now();
   data.reason = req.query?.reason
   fs.writeFileSync(`${__dirname}/data.json`, JSON.stringify(data, null, 4));
