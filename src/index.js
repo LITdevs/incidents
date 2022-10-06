@@ -17,7 +17,6 @@ const wrongKeyJumpscares = [
   "https://flipnot.es/KLJPMT",
   "https://youtu.be/XNakLxMVxs8",
   "https://redd.it/xtcwtt",
-  "https://redd.it/xsu9r4",
   "https://redd.it/xsclwq",
   "https://youtu.be/z_Pbq1VC5is",
   "https://youtu.be/vd_Xx1sf7bY",
