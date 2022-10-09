@@ -25,7 +25,8 @@ const wrongKeyJumpscares = [
   "https://youtu.be/PyYJx_Feboc",
   "https://eatpancakes.vercel.app",
   "https://youtu.be/YbrDTMQTA7M",
-  "https://youtu.be/zUsgsEPALic"
+  "https://youtu.be/zUsgsEPALic",
+  "https://g.co/furikku"
 ]
 
 // middleware shit
