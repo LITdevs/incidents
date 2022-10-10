@@ -49,18 +49,19 @@ app.get('/api/image', function (req, res) {
 })
 
 app.get('/api/reset', function (req, res) {
+  let survivalTime = friendlyTime(new Date(data.lastIncident)).split(" ago")[0]
   if (req.query?.key != process.env.KEY) return res.redirect(wrongKeyJumpscares[Math.floor(Math.random()*wrongKeyJumpscares.length)]);
   data.lastIncident = Date.now();
   data.reason = req.query?.reason
   fs.writeFileSync(`${__dirname}/data.json`, JSON.stringify(data, null, 4));
   res.redirect("/?messup")
   axios.post(process.env.DISCORD_FAILHOOK, {
-    content: `**NEW EPIC LIT DEV FAILURE JUST ARRIVED!**\n${data.reason ? data.reason : "(too embarrassed to comment)"}\n<https://incidents.litdevs.org>`
+    content: `**NEW EPIC LIT DEV FAILURE JUST ARRIVED!**\n${data.reason ? data.reason : "(too embarrassed to comment)"}\nwe were incident free for ${survivalTime}! thanks for that!\n<https://incidents.litdevs.org>`
   })
 })
 
 app.get('*', function (req, res) {
-  res.render(__dirname + "/../public/index.ejs", { incidentTime: friendlyTime(new Date(data.lastIncident)), reason: data.reason ? `<b>${data.reason}</b>` : "(too embarrassed to comment)" });
+  res.render(__dirname + "/../public/index.ejs", { incidentTime: friendlyTime(new Date(data.lastIncident)).split(" ago")[0], reason: data.reason ? `<b>${data.reason}</b>` : "(too embarrassed to comment)" });
 })
 
 app.listen(82)
