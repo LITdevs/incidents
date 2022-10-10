@@ -26,7 +26,8 @@ const wrongKeyJumpscares = [
   "https://eatpancakes.vercel.app",
   "https://youtu.be/YbrDTMQTA7M",
   "https://youtu.be/zUsgsEPALic",
-  "https://g.co/furikku"
+  "https://g.co/furikku",
+  "https://web.archive.org/web/20090404032633im_/https://www.google.com/mobile/m/brainsearch/index.html"
 ]
 
 // middleware shit
