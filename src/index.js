@@ -56,7 +56,7 @@ app.get('/api/reset', function (req, res) {
   fs.writeFileSync(`${__dirname}/data.json`, JSON.stringify(data, null, 4));
   res.redirect("/?messup")
   axios.post(process.env.DISCORD_FAILHOOK, {
-    content: `**NEW EPIC LIT DEV FAILURE JUST ARRIVED!**\n${data.reason ? data.reason : "(too embarrassed to comment)"}\nwe were incident free for ${survivalTime}! thanks for that!\n<https://incidents.litdevs.org>`
+    content: `**NEW EPIC LIT DEV FAILURE JUST ARRIVED!**\nWe were incident-free for ${survivalTime}.\n\n${data.reason ? data.reason : "(too embarrassed to comment)"}\n<https://incidents.litdevs.org>`
   })
 })
 
