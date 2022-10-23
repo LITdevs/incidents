@@ -21,6 +21,7 @@
         </style>
         <script>
             window.addEventListener("DOMContentLoaded", function() {
+                if (document.location.search == "?shutup") return;
                 if(document.location.search == "?messup") {
                     history.replaceState('', '', '/');
                     new Audio("/resources/done.mp3").play();
