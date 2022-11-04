@@ -26,8 +26,15 @@ const wrongKeyJumpscares = [
   "https://eatpancakes.vercel.app",
   "https://youtu.be/YbrDTMQTA7M",
   "https://youtu.be/zUsgsEPALic",
-  "https://g.co/furikku",
-  "https://web.archive.org/web/20090404032633im_/https://www.google.com/mobile/m/brainsearch/index.html"
+  "https://g.co/____",
+  "https://web.archive.org/web/20090404032633im_/https://www.google.com/mobile/m/brainsearch/index.html",
+  "https://youtu.be/V-jgL7KKg6E",
+  "https://youtu.be/CHr9BKj2CuE",
+  "https://youtu.be/HZWbJC1WZGg",
+  "https://twitter.com/GIRakaCHEEZER/status/1171305152076083200",
+  "https://twitter.com/ricchuu_/status/1547179569261813760",
+  "https://twitter.com/fruttymoment/status/1539991263763644416",
+  "https://i.imgur.com/mAtHQNx.png"
 ]
 
 // middleware shit
