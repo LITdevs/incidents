@@ -36,7 +36,9 @@ const wrongKeyJumpscares = [
   "https://twitter.com/fruttymoment/status/1539991263763644416",
   "https://i.imgur.com/mAtHQNx.png",
   "https://hmpg.net/",
-  "https://imgur.com/gallery/PZFMPAs"
+  "https://imgur.com/gallery/PZFMPAs",
+  "https://raw.githubusercontent.com/Jased-0001/jased-0001.github.io/4bb4577b895cc49a71bb53b5bd15d844f2f05bc9/Brick.mp4",
+  "https://imgur.com/c63FVbx"
 ]
 
 // middleware shit
