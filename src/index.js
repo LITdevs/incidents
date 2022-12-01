@@ -38,7 +38,10 @@ const wrongKeyJumpscares = [
   "https://hmpg.net/",
   "https://imgur.com/gallery/PZFMPAs",
   "https://raw.githubusercontent.com/Jased-0001/jased-0001.github.io/4bb4577b895cc49a71bb53b5bd15d844f2f05bc9/Brick.mp4",
-  "https://imgur.com/c63FVbx"
+  "https://imgur.com/c63FVbx",
+  "https://i.imgur.com/3HUokmq.jpg", // now this is an incident
+  "https://youtu.be/dN64s06xC7Q",
+  "https://youtu.be/nZiH_Omabfo"
 ]
 
 // middleware shit
