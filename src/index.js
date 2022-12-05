@@ -42,7 +42,8 @@ const wrongKeyJumpscares = [
   "https://i.imgur.com/3HUokmq.jpg", // now this is an incident
   "https://youtu.be/dN64s06xC7Q",
   "https://youtu.be/nZiH_Omabfo",
-  "https://youtu.be/D0GusFnX178"
+  "https://youtu.be/D0GusFnX178",
+  "https://flipnot.es/GP6S52B"
 ]
 
 // middleware shit
