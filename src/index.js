@@ -44,7 +44,8 @@ const wrongKeyJumpscares = [
   "https://youtu.be/nZiH_Omabfo",
   "https://youtu.be/D0GusFnX178",
   "https://flipnot.es/GP6S52B",
-  "https://en.wikipedia.org/wiki/G%C3%A4vle_goat"
+  "https://en.wikipedia.org/wiki/G%C3%A4vle_goat",
+  "https://redd.it/rtl6il"
 ]
 
 // middleware shit
