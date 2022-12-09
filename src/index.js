@@ -44,7 +44,8 @@ const wrongKeyJumpscares = [
   "https://youtu.be/nZiH_Omabfo",
   "https://youtu.be/D0GusFnX178",
   "https://en.wikipedia.org/wiki/G%C3%A4vle_goat",
-  "https://redd.it/rtl6il"
+  "https://redd.it/rtl6il",
+  "https://twitter.com/NightMargin/status/1601061269812891650"
 ]
 
 // middleware shit
