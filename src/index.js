@@ -45,7 +45,18 @@ const wrongKeyJumpscares = [
   "https://youtu.be/D0GusFnX178",
   "https://en.wikipedia.org/wiki/G%C3%A4vle_goat",
   "https://redd.it/rtl6il",
-  "https://twitter.com/NightMargin/status/1601061269812891650"
+  "https://twitter.com/NightMargin/status/1601061269812891650",
+  "https://i.imgur.com/NWOJVWi.png",
+  "https://twitter.com/NightMargin/status/1202366163822317568",
+  "https://twitter.com/GIRakaCHEEZER/status/1601689086569623552",
+  "https://twitter.com/avolicis/status/1601019802407309312",
+  "https://twitter.com/mothkoisi/status/1600913964526772225",
+  "https://twitter.com/PomeloChewy/status/1599849105295310848",
+  "https://twitter.com/GIRakaCHEEZER/status/1599566056632496128",
+  "https://twitter.com/theluigiguy/status/1596886081626341377",
+  "https://github.com/reactjs/reactjs.org/issues/3896",
+  "https://twitter.com/MarioBrothBlog/status/1575182944980725760",
+  "https://niko.is-ne.at/5PNKWlTpE.png"
 ]
 
 // middleware shit
