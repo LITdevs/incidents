@@ -56,7 +56,14 @@ const wrongKeyJumpscares = [
   "https://twitter.com/theluigiguy/status/1596886081626341377",
   "https://github.com/reactjs/reactjs.org/issues/3896",
   "https://twitter.com/MarioBrothBlog/status/1575182944980725760",
-  "https://niko.is-ne.at/5PNKWlTpE.png"
+  "https://i.imgur.com/zEwYGGY.png",
+  "https://redd.it/zl0x3y",
+  "https://redd.it/zeqgvx",
+  "https://redd.it/z1q4ys",
+  "https://redd.it/ylbbiy",
+  "https://redd.it/yottgb",
+  "https://redd.it/tmg3eu",
+  "https://redd.it/vstwpt"
 ]
 
 // middleware shit
