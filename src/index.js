@@ -64,7 +64,8 @@ const wrongKeyJumpscares = [
   "https://redd.it/yottgb",
   "https://redd.it/tmg3eu",
   "https://redd.it/vstwpt",
-  "https://redd.it/zl9hss"
+  "https://redd.it/zl9hss",
+  "https://youtu.be/qHKGb8IDszc"
 ]
 
 // middleware shit
