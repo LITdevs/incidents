@@ -70,7 +70,8 @@ const wrongKeyJumpscares = [
   "https://clips.twitch.tv/IgnorantSolidDragonfruitSMOrc-GfAzsz1q7GnRiyL5",
   "https://clips.twitch.tv/SoftGoldenArmadilloPartyTime-1nhoyeGqBAdoSsLm",
   "https://i.imgur.com/vamdPvA.png",
-  "https://redd.it/10c4qdu"
+  "https://redd.it/10c4qdu",
+  "https://commons.wikimedia.org/wiki/File:Buttered_cat.png"
 ]
 
 // middleware shit
