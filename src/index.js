@@ -69,11 +69,14 @@ const wrongKeyJumpscares = [
   "https://youtu.be/hTAiHiKNXr0",
   "https://clips.twitch.tv/IgnorantSolidDragonfruitSMOrc-GfAzsz1q7GnRiyL5",
   "https://clips.twitch.tv/SoftGoldenArmadilloPartyTime-1nhoyeGqBAdoSsLm",
+  "https://trash.vukky.net/file/srPPaw.png",
+  "https://youtu.be/o7XxKCMaPUY",
   "https://i.imgur.com/vamdPvA.png",
   "https://redd.it/10c4qdu",
   "https://commons.wikimedia.org/wiki/File:Buttered_cat.png",
   "https://stackoverflow.com/a/1732454",
-  "https://youtu.be/GNTU0liO0vI?t=24"
+  "https://youtu.be/GNTU0liO0vI?t=24",
+  "https://en.wikipedia.org/wiki/Kopi_luwak"
 ]
 
 // middleware shit
