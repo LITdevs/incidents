@@ -76,7 +76,14 @@ const wrongKeyJumpscares = [
   "https://commons.wikimedia.org/wiki/File:Buttered_cat.png",
   "https://stackoverflow.com/a/1732454",
   "https://youtu.be/GNTU0liO0vI?t=24",
-  "https://en.wikipedia.org/wiki/Kopi_luwak"
+  "https://en.wikipedia.org/wiki/Kopi_luwak",
+  "https://twitter.com/cirkelnio/status/1606069515783217153",
+  "https://twitter.com/oskdev/status/1620796870330023936",
+  "https://twitter.com/TriciaLockwood/status/1108102037072433153",
+  "https://redd.it/10hhoka",
+  "https://redd.it/z1q4ys",
+  "https://redd.it/zeqgvx",
+  "https://redd.it/zf4n02"
 ]
 
 // middleware shit
