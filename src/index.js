@@ -18,7 +18,6 @@ const wrongKeyJumpscares = [
   "https://youtu.be/XNakLxMVxs8",
   "https://redd.it/xtcwtt",
   "https://redd.it/xsclwq",
-  "https://youtu.be/z_Pbq1VC5is",
   "https://youtu.be/vd_Xx1sf7bY",
   "https://youtu.be/lcC5xgx8ISk",
   "https://youtu.be/IbM9lJUn9N0",
