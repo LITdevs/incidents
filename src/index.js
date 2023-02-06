@@ -14,77 +14,50 @@ require("dotenv").config();
 // having the same video got boring
 // i'm a little biased with my selections
 const wrongKeyJumpscares = [
-  "https://flipnot.es/KLJPMT",
-  "https://youtu.be/XNakLxMVxs8",
-  "https://redd.it/xtcwtt",
-  "https://redd.it/xsclwq",
-  "https://youtu.be/vd_Xx1sf7bY",
-  "https://youtu.be/lcC5xgx8ISk",
-  "https://youtu.be/IbM9lJUn9N0",
-  "https://youtu.be/PyYJx_Feboc",
-  "https://eatpancakes.vercel.app",
-  "https://youtu.be/YbrDTMQTA7M",
-  "https://youtu.be/zUsgsEPALic",
-  "https://g.co/____",
-  "https://web.archive.org/web/20090404032633im_/https://www.google.com/mobile/m/brainsearch/index.html",
-  "https://youtu.be/V-jgL7KKg6E",
-  "https://youtu.be/CHr9BKj2CuE",
-  "https://youtu.be/HZWbJC1WZGg",
-  "https://twitter.com/GIRakaCHEEZER/status/1171305152076083200",
-  "https://twitter.com/ricchuu_/status/1547179569261813760",
-  "https://twitter.com/fruttymoment/status/1539991263763644416",
-  "https://i.imgur.com/mAtHQNx.png",
-  "https://hmpg.net/",
-  "https://imgur.com/gallery/PZFMPAs",
-  "https://raw.githubusercontent.com/Jased-0001/jased-0001.github.io/4bb4577b895cc49a71bb53b5bd15d844f2f05bc9/Brick.mp4",
-  "https://imgur.com/c63FVbx",
-  "https://i.imgur.com/3HUokmq.jpg", // now this is an incident
-  "https://youtu.be/dN64s06xC7Q",
-  "https://youtu.be/nZiH_Omabfo",
-  "https://youtu.be/D0GusFnX178",
+  "https://youtu.be/XNakLxMVxs8", // niko doesn't like cuss words
+  "https://redd.it/xtcwtt", // squeaky niko
+  "https://redd.it/xsclwq", // niko summons demon pancakes
+  "https://youtu.be/vd_Xx1sf7bY", // club penguin snow halation
+  "https://eatpancakes.vercel.app", // niko eats a lot of pancakes
+  "https://youtu.be/YbrDTMQTA7M", // niko needs to vent (like in among us)
+  "https://g.co/____", // the gboard bar - really long bar as keyboard
+  "https://web.archive.org/web/20090404032633im_/https://www.google.com/mobile/m/brainsearch/index.html", // google "brain search", if this rots i will be so surprised
+  "https://youtu.be/V-jgL7KKg6E", // result.mp4 - music made by ai, YOU "MADE" THIS I DON'T THINK IT'S GONNA DISAPPEAR
+  "https://twitter.com/GIRakaCHEEZER/status/1171305152076083200", // niko plush fancomic - https://archive.ph/iSJZR https://web.archive.org/web/20190925205308/https://twitter.com/GIRakaCHEEZER/status/1171305152076083200
+  "https://twitter.com/ricchuu_/status/1547179569261813760", // niko crying (boohoo)
+  "https://twitter.com/fruttymoment/status/1539991263763644416", // niko says "meow" (revolutionary)
+  "https://wanderers.cloud/file/HcFRmg.png", // vukky and unnamed user discuss food preperation methods
+  "https://hmpg.net/", // the end of the internet
+  "https://raw.githubusercontent.com/Jased-0001/jased-0001.github.io/4bb4577b895cc49a71bb53b5bd15d844f2f05bc9/Brick.mp4", // spinning brick but unusually long video length
+  "https://wanderers.cloud/file/2dyLEg.jpeg", // kao-chan murdered by lightning
+  "https://youtu.be/nZiH_Omabfo", // smiling pile of poo
   "https://en.wikipedia.org/wiki/G%C3%A4vle_goat",
-  "https://redd.it/rtl6il",
-  "https://twitter.com/NightMargin/status/1601061269812891650",
-  "https://i.imgur.com/NWOJVWi.png",
-  "https://twitter.com/NightMargin/status/1202366163822317568",
-  "https://twitter.com/GIRakaCHEEZER/status/1601689086569623552",
-  "https://twitter.com/avolicis/status/1601019802407309312",
-  "https://twitter.com/mothkoisi/status/1600913964526772225",
-  "https://twitter.com/PomeloChewy/status/1599849105295310848",
-  "https://twitter.com/GIRakaCHEEZER/status/1599566056632496128",
-  "https://twitter.com/theluigiguy/status/1596886081626341377",
-  "https://github.com/reactjs/reactjs.org/issues/3896",
-  "https://twitter.com/MarioBrothBlog/status/1575182944980725760",
-  "https://i.imgur.com/zEwYGGY.png",
-  "https://redd.it/zl0x3y",
-  "https://redd.it/zeqgvx",
-  "https://redd.it/z1q4ys",
-  "https://redd.it/ylbbiy",
-  "https://redd.it/yottgb",
-  "https://redd.it/tmg3eu",
-  "https://redd.it/vstwpt",
-  "https://redd.it/zl9hss",
-  "https://youtu.be/qHKGb8IDszc",
-  "https://youtu.be/hTAiHiKNXr0",
-  "https://clips.twitch.tv/IgnorantSolidDragonfruitSMOrc-GfAzsz1q7GnRiyL5",
-  "https://clips.twitch.tv/SoftGoldenArmadilloPartyTime-1nhoyeGqBAdoSsLm",
-  "https://trash.vukky.net/file/srPPaw.png",
-  "https://youtu.be/o7XxKCMaPUY",
-  "https://i.imgur.com/vamdPvA.png",
-  "https://redd.it/10c4qdu",
+  "https://redd.it/rtl6il", // bribing gf with gacha pulls
+  "https://twitter.com/NightMargin/status/1601061269812891650", // alula questions blowing up the car(tridge) - https://archive.ph/RGfix http://web.archive.org/web/20230206093414/https://twitter.com/NightMargin/status/1601061269812891650
+  "https://twitter.com/mothkoisi/status/1600913964526772225", // niko figures out that the sun goes in the sun-shaped hole - archiving failed
+  "https://github.com/reactjs/reactjs.org/issues/3896", // is it safe to use "__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED"?
+  "https://twitter.com/MarioBrothBlog/status/1575182944980725760", // one-character-kun
+  "https://wanderers.cloud/file/1LH7uQ.png", // owo you fowond me!! nyaa~ cwan youo comoe towo my howose and giv me somoe pwets?? ^w^
+  "https://redd.it/zeqgvx", // person uses rs3 action bar icons to make it look like someone slipped on a banana
+  "https://redd.it/z1q4ys", // 6 people online on sussyscape
+  "https://redd.it/ylbbiy", // bird steals an airpod from a news reporter
+  "https://redd.it/yottgb", // you finally found the source of the bug! it's a variable named "temp"
+  "https://youtu.be/hTAiHiKNXr0", // niko has arrived! (if this rots i will be so sad and cry and angwy)
+  "https://clips.twitch.tv/IgnorantSolidDragonfruitSMOrc-GfAzsz1q7GnRiyL5", // neuro-sama sez you should not invest in bitcons
+  "https://clips.twitch.tv/SoftGoldenArmadilloPartyTime-1nhoyeGqBAdoSsLm", // neuro-sama's favorite gutworm is rm -rf
+  "https://trash.vukky.net/file/srPPaw.png", // sussy reddit logo in css
+  "https://youtu.be/o7XxKCMaPUY", // a plane pets niko (by murder)
+  "https://redd.it/10c4qdu", // 95% of prize pool, 50% of prize pool, 35% of prize pool... u wot m8
   "https://commons.wikimedia.org/wiki/File:Buttered_cat.png",
-  "https://stackoverflow.com/a/1732454",
-  "https://youtu.be/GNTU0liO0vI?t=24",
-  "https://en.wikipedia.org/wiki/Kopi_luwak",
-  "https://twitter.com/cirkelnio/status/1606069515783217153",
-  "https://twitter.com/oskdev/status/1620796870330023936",
-  "https://twitter.com/TriciaLockwood/status/1108102037072433153",
-  "https://redd.it/10hhoka",
-  "https://redd.it/z1q4ys",
-  "https://redd.it/zeqgvx",
-  "https://redd.it/zf4n02",
-  "https://youtu.be/hTAiHiKNXr0",
-  "https://twitter.com/GIRakaCHEEZER/status/1604385264478334976"
+  "https://stackoverflow.com/a/1732454", // You can't parse [X]HTML with regex.
+  "https://youtu.be/GNTU0liO0vI?t=24", // yaYA!!! go to TEM eSHOP!!!
+  "https://twitter.com/cirkelnio/status/1606069515783217153", // richard smallman, head of the twee software foundation
+  "https://twitter.com/TriciaLockwood/status/1108102037072433153", // jail for mother for One Thousand Years!!!!
+  "https://redd.it/zf4n02", // the quest npcs when you hold spacebar
+  "https://twitter.com/GIRakaCHEEZER/status/1604385264478334976", // way too many nikos on the couch!
+  "https://redd.it/10quav3", // niko uses the very healthy and not burning computer
+  "https://redd.it/10sjsyh", // "sidewalk" rotom
+  "https://twitter.com/oskdev/status/1620796870330023936" // thank you for the lovely [[CONNECTION ERROR]] kagari
 ]
 
 // middleware shit
