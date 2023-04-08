@@ -58,7 +58,8 @@ const wrongKeyJumpscares = [
   "https://redd.it/10quav3", // niko uses the very healthy and not burning computer
   "https://redd.it/10sjsyh", // "sidewalk" rotom
   "https://twitter.com/oskdev/status/1620796870330023936", // thank you for the lovely [[CONNECTION ERROR]] kagari
-  "https://redd.it/10ydnbb" // chatgpt plays chess by summoning new pieces and completely breaking the laws of chess piece movement
+  "https://redd.it/10ydnbb", // chatgpt plays chess by summoning new pieces and completely breaking the laws of chess piece movement
+  "https://youtu.be/yPuI4l0jK7s?t=3s" // "Special thanks to Everyone who loves Hatsune Miku"
 ]
 
 // middleware shit
